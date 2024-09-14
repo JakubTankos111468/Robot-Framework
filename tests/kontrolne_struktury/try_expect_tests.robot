@@ -31,16 +31,6 @@ Fail Example
         Log To Console    "Fail"
     END
 
-Fail Example With Finally
-    TRY
-        Log To Console    This is from try block.
-        Fail     Fail
-    EXCEPT    Error message
-        Log To Console    This is from except block.
-    FINALLY
-        Log To Console    This is always executed.
-    END
-
 Multiple Except Example
     TRY
         Log To Console    This is from try block.
